@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.devsuperior.movieflix.entities.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<Long,User>{
+public interface UserRepository extends JpaRepository<User ,Long>{
 	
 	public User findByEmail(String email);
 
